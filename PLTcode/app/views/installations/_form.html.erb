@@ -29,7 +29,7 @@
 
   <p>
     <%= f.label :Contact_Number %><br>
-    <%= f.text_field :contact %>
+    <%= f.text_field :contact, :id => 'contact', :input_html => { :maxlength => 14, :"data-mask" => "999-999-9999" } %>
   </p>
 
   <p>

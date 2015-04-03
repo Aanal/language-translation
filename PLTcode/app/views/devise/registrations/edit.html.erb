@@ -37,7 +37,7 @@
   </div>
 
   <div><%= f.label :Contact_Number %><br />
-  <%= f.text_field :contact %></div>
+  <%= f.text_field :contact, :id => 'contact', :input_html => { :maxlength => 14, :"data-mask" => "999-999-9999" } %></div>
 
   <div><%= f.label :Login_Approval %> ( cannot change ) &nbsp;
   <%= f.radio_button :login_approval, @user.login_approval, checked:true %> 
